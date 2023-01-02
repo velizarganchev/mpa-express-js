@@ -1,0 +1,21 @@
+{
+  "name": "mpa-express",
+  "version": "1.0.0",
+  "description": "Educational express app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velizarganchev/mpa-express-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velizarganchev/mpa-express-js/issues"
+  },
+  "homepage": "https://github.com/velizarganchev/mpa-express-js#readme"
+}
