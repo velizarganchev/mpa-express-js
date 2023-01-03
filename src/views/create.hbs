@@ -1,1 +1,32 @@
-<h1>Create Car</h1>
+<div class="container col-md-8 col-sm-12 col-xs-12">
+    <h1 class="text-center">Create Car</h1>
+    <form action="/car/create" method="POST">
+        <div class="mb-3">
+            <label for="model" class="form-label">Model</label>
+            <input type="text" class="form-control" id="model" name="model">
+        </div>
+        <div class="mb-3">
+            <label for="year" class="form-label">Yaer</label>
+            <input type="text" class="form-control" id="year" name="year">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image Url</label>
+            <input type="text" class="form-control" id="image" name="image">
+        </div>
+        <div class="mb-3">
+            <label for="fuel" class="form-label">Fuel</label>
+            <select id="fuel" class="form-select" name="fuel" aria-label="Default select example">
+                <option selected>Choose...</option>
+                <option value="1">Benzin</option>
+                <option value="2">Diesel</option>
+                <option value="3">Hybrid</option>
+                <option value="3">Electro</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="mileage" class="form-label">Mileage</label>
+            <input type="text" class="form-control" id="mileage" name="mileage">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
