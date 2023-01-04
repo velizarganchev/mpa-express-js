@@ -1,7 +1,7 @@
 import uniqid from 'uniqid';
 
 class Car {
-    static #cars = [
+    static cars = [
         {
             id: 'knpdfajhfpjpfaq',
             model: 'Tesla',
@@ -29,11 +29,11 @@ class Car {
     }
 
     static getAll() {
-        return Car.#cars.slice();
+        return Car.cars.slice();
     };
 
     static add(car) {
-        Car.#cars.push(car);
+        Car.cars.push(car);
     }
 
 }

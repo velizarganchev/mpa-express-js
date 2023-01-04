@@ -1,11 +1,13 @@
 import Car from '../Models/carModel.js'
 
-const carDb = [];
 
 function getAll() {
     return Car.getAll().slice();
 }
 
+function getOne(carId) {
+    return Car.cars.find(x => x.id  == carId);
+}
 
 function create(model, year, image, fuel, mileage) {
     let car = new Car(model, year, image, fuel, mileage);
@@ -14,6 +16,7 @@ function create(model, year, image, fuel, mileage) {
 
 const carService = {
     create,
-    getAll
+    getAll,
+    getOne
 };
 export default carService;
