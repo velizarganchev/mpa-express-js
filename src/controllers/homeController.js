@@ -5,9 +5,7 @@ const router = express.Router();
 
 function home(req, res) {
     let cars = carService.getAll();
-    console.log(cars);
-
-    res.render('index');
+    res.render('index', { cars });
 }
 
 router.get('/', home);
