@@ -7,7 +7,11 @@ function home(req, res) {
     let cars = carService.getAll();
     res.render('index', { cars });
 }
+function about(req, res) {
+    res.render('about');
+}
 
 router.get('/', home);
+router.get('/about', about);
 
 export default router;
